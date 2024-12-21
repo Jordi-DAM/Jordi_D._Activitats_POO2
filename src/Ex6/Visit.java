@@ -1,4 +1,4 @@
-package ex6;
+package Ex6;
 
 import java.time.LocalDateTime;
 
