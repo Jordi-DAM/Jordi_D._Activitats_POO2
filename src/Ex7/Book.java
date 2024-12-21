@@ -1,33 +1,34 @@
 package Ex7;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Book {
 
-    private LocalDateTime checkinDate;
-    private LocalDateTime checkoutDate;
+    private LocalDate checkinDate;
+    private LocalDate checkoutDate;
     private Room room;
 
-    public Book(LocalDateTime checkinDate, LocalDateTime checkoutDate, Room room){
+    public Book(LocalDate checkinDate, LocalDate checkoutDate, Room room){
         this.checkinDate = checkinDate;
         this.checkoutDate = checkoutDate;
         this.room = room;
     }
 
 
-    public LocalDateTime getCheckinDate() {
+    public LocalDate getCheckinDate() {
         return checkinDate;
     }
 
-    public void setCheckinDate(LocalDateTime checkinDate) {
+    public void setCheckinDate(LocalDate checkinDate) {
         this.checkinDate = checkinDate;
     }
 
-    public LocalDateTime getCheckoutDate() {
+    public LocalDate getCheckoutDate() {
         return checkoutDate;
     }
 
-    public void setCheckoutDate(LocalDateTime checkoutDate) {
+    public void setCheckoutDate(LocalDate checkoutDate) {
         this.checkoutDate = checkoutDate;
     }
 

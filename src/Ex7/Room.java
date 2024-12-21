@@ -24,7 +24,17 @@ public class Room {
         return services;
     }
 
-    public void setServices(ArrayList<Service> services) {
-        this.services = services;
+    public void setServices(Service service) {
+        services.add(service);
     }
+
+    public void showServices(){
+        System.out.println("Els serveis d'aquesta habitació són:");
+        for (Service s: services){
+            System.out.println(s);
+        }
+    }
+
+
+
 }
